@@ -870,6 +870,32 @@ print(pessoas)
 
 for v in pessoas.values():
     print(f'{v}')
-    '''
+    
 #Funções
 #Comandos def
+
+def mostra_linha():
+    print('---' * 10)
+
+#Programa Principal
+
+mostra_linha()
+print('    Curso Em Vídeo    ')
+mostra_linha()
+print('    Aprenda Python     ')
+mostra_linha()
+print('    César Oliveira    ')
+mostra_linha()
+'''
+
+def titulo(txt):
+    print(txt)
+    print('---' * 10)
+    
+
+
+#Programa Principal
+
+titulo('    Curso Em Vídeo    ')
+titulo('    Aprenda Python     ')
+titulo('    César Oliveira    ')
