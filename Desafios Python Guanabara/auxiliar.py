@@ -886,7 +886,7 @@ print('    Aprenda Python     ')
 mostra_linha()
 print('    César Oliveira    ')
 mostra_linha()
-'''
+
 
 def titulo(txt):
     print(txt)
@@ -899,3 +899,39 @@ def titulo(txt):
 titulo('    Curso Em Vídeo    ')
 titulo('    Aprenda Python     ')
 titulo('    César Oliveira    ')
+
+
+a = 4 
+b = 5 
+s = a + b 
+print(s)
+
+a = 8
+b = 9 
+s = a + b
+print(s)
+
+a = 2 
+b = 1
+s = a + b  
+print (s)
+
+
+
+def soma(a, b):
+    s = a + b 
+    print(s)
+
+
+soma(4, 5)
+soma(9, 8)
+soma(2, 1)'''
+
+def soma(a, b):
+    print(f'A = {a} e B = {b} ')
+    s = a + b
+    print(f'A soma A + B = {s}')
+
+# Programa Principal
+soma(1, 4)
+soma(b=3, a=54)
