@@ -925,7 +925,7 @@ def soma(a, b):
 
 soma(4, 5)
 soma(9, 8)
-soma(2, 1)'''
+soma(2, 1)
 
 def soma(a, b):
     print(f'A = {a} e B = {b} ')
@@ -934,4 +934,143 @@ def soma(a, b):
 
 # Programa Principal
 soma(1, 4)
-soma(b=3, a=54)
+soma(b=3, a=54)'''
+
+
+'''
+def procura_por_par_soma_alvo(lista, soma_alvo):
+    rastreia_numeros = set()
+
+    for numero in lista:
+        diferenca_alvo = soma_alvo - numero
+
+        if diferenca_alvo in rastreia_numeros:
+            return [numero, diferenca_alvo]  
+        else:
+            rastreia_numeros.add(numero)
+
+    return []
+
+lista_de_exemplo = [3, 5, -4, 8, 11, -1, 6]
+soma_alvo_de_exemplo = 10
+
+resultado = procura_por_par_soma_alvo(lista_de_exemplo, soma_alvo_de_exemplo)
+print(resultado)
+
+
+
+import random
+
+def procura_por_par_soma_alvo(lista, soma_alvo):
+    rastreia_numeros = set()
+
+    for numero in lista:
+        diferenca_alvo = soma_alvo - numero
+
+        if diferenca_alvo in rastreia_numeros:
+            return [numero, diferenca_alvo]
+        else:
+            rastreia_numeros.add(numero)
+
+    return []
+
+tamanho_lista = 7 
+lista_de_exemplo = [random.randint(-23, 23) for _ in range(tamanho_lista)]
+soma_alvo_de_exemplo = random.randint(-24, 24)
+
+resultado = procura_por_par_soma_alvo(lista_de_exemplo, soma_alvo_de_exemplo)
+print(f"Lista gerada aleatoriamente: {lista_de_exemplo}")
+print(f"Soma alvo gerado aleatoriamente: {soma_alvo_de_exemplo}")
+print(f"Resultado: {resultado}")
+
+def verificar_cor_uniformes_na_fotogrfia(alunos_uniformes_pretos, alunos_uniformes_laranjas):
+
+    alunos_uniformes_pretos.sort()
+    alunos_uniformes_laranjas.sort()
+
+    for altura_preto, altura_laranja in zip(alunos_uniformes_pretos, alunos_uniformes_laranjas):
+        if altura_preto >= altura_laranja:
+            return False
+
+    return True
+
+alunos_uniformes_pretos = [150, 179, 149, 152, 154]
+alunos_uniformes_laranjas = [162, 181, 151, 160, 170]
+
+resultado = verificar_cor_uniformes_na_fotogrfia(alunos_uniformes_pretos, alunos_uniformes_laranjas)
+print(resultado)
+
+
+import random
+
+def gerar_alturas_aleatorias(tamanho_turma, altura_min, altura_max):
+    alturas = []
+    for _ in range(tamanho_turma):
+        alturas.append(random.randint(altura_min, altura_max))
+    return alturas
+
+def verificar_cor_uniformes_na_fotografia(alunos_uniformes_pretos, alunos_uniformes_laranjas):
+
+    if len(alunos_uniformes_pretos) != len(alunos_uniformes_laranjas):
+        print("As listas com as alturas dos alunos devem ter a mesma quantidade de itens.")
+        return False
+
+    alunos_uniformes_pretos.sort()
+    alunos_uniformes_laranjas.sort()
+
+    for i in range(len(alunos_uniformes_pretos)):
+        altura_preto = alunos_uniformes_pretos[i]
+        altura_laranja = alunos_uniformes_laranjas[i]
+
+        if altura_preto >= altura_laranja:
+            return False
+
+    return True
+
+tamanho_da_turma_de_uniforme_preto = 5
+tamanho_da_turma_de_uniforme_laranja = 5
+altura_min_pretos, altura_max_pretos = 138, 188
+altura_min_laranjas, altura_max_laranjas = 137, 185
+
+alunos_uniformes_pretos = gerar_alturas_aleatorias(tamanho_da_turma_de_uniforme_preto, altura_min_pretos, altura_max_pretos)
+alunos_uniformes_laranjas = gerar_alturas_aleatorias(tamanho_da_turma_de_uniforme_laranja, altura_min_laranjas, altura_max_laranjas)
+
+resultado = verificar_cor_uniformes_na_fotografia(alunos_uniformes_pretos, alunos_uniformes_laranjas)
+
+print("Alturas dos alunos com uniformes pretos:", alunos_uniformes_pretos)
+print("Alturas dos alunos com uniformes laranjas:", alunos_uniformes_laranjas)
+print("Resultado da fotografia:", resultado)
+'''
+
+def codificador_de_palavras(frase):
+    if not frase:
+        return "A frase de entrada não pode ser vazia, por favor reinicie o programa e tente novamente."
+
+    resultado_dos_caracteres_comprimido = ""
+    contagem_dos_caracteres = 1
+
+    for i in range(1, len(frase)):
+        caractere_posicao_atual = frase[i]
+        caractere_posicao_anterior = frase[i - 1]
+
+        if caractere_posicao_atual == caractere_posicao_anterior:
+            contagem_dos_caracteres += 1
+        else:
+            if contagem_dos_caracteres > 1:
+                resultado_dos_caracteres_comprimido += str(contagem_dos_caracteres) + caractere_posicao_anterior
+            else:
+                resultado_dos_caracteres_comprimido += caractere_posicao_anterior
+
+            contagem_dos_caracteres = 1
+
+
+    if contagem_dos_caracteres > 1:
+        resultado_dos_caracteres_comprimido += str(contagem_dos_caracteres) + frase[-1]
+    else:
+        resultado_dos_caracteres_comprimido += frase[-1]
+
+    return resultado_dos_caracteres_comprimido
+
+frase_usuario_deseja_codificar = input("Digite a frase que deseja codificar: ")
+resultado_codificado = codificador_de_palavras(frase_usuario_deseja_codificar)
+print(f"Resultado codificado: {resultado_codificado}")
