@@ -1040,7 +1040,7 @@ resultado = verificar_cor_uniformes_na_fotografia(alunos_uniformes_pretos, aluno
 print("Alturas dos alunos com uniformes pretos:", alunos_uniformes_pretos)
 print("Alturas dos alunos com uniformes laranjas:", alunos_uniformes_laranjas)
 print("Resultado da fotografia:", resultado)
-'''
+
 
 def codificador_de_palavras(frase):
     if not frase:
@@ -1073,4 +1073,5 @@ def codificador_de_palavras(frase):
 
 frase_usuario_deseja_codificar = input("Digite a frase que deseja codificar: ")
 resultado_codificado = codificador_de_palavras(frase_usuario_deseja_codificar)
-print(f"Resultado codificado: {resultado_codificado}")
+print(f"Resultado codificado: {resultado_codificado}")'''
+
