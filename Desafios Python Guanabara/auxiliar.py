@@ -570,11 +570,11 @@ print(f'lista a {a}')
 
 a.append(10)
 print(f'\nlista {a}')
-'''
+
 
 # Listas Compostas
 
-'''
+
 elas = list()
 elas.append('Carine')
 elas.append(20)
@@ -934,10 +934,9 @@ def soma(a, b):
 
 # Programa Principal
 soma(1, 4)
-soma(b=3, a=54)'''
+soma(b=3, a=54)
 
 
-'''
 def procura_por_par_soma_alvo(lista, soma_alvo):
     rastreia_numeros = set()
 
@@ -1073,5 +1072,104 @@ def codificador_de_palavras(frase):
 
 frase_usuario_deseja_codificar = input("Digite a frase que deseja codificar: ")
 resultado_codificado = codificador_de_palavras(frase_usuario_deseja_codificar)
-print(f"Resultado codificado: {resultado_codificado}")'''
+print(f"Resultado codificado: {resultado_codificado}")
+
+
+#FUNÇÕES PARTE II
+
+def teste():
+    print('teste')
+
+def l():
+    print('-' * 30)
+
+def carros(modelo):
+    l()
+    print(modelo)
+    l()
+
+def treino(modalidade):
+    l()
+    print(modalidade)
+    l()
+
+
+#Programa Principal
+carros('X1')
+treino('corrida')
+treino('academia')
+
+def soma(x, y):
+    s = x + y
+    print(f'A soma entre {x} e {y} é igual a {s}.')
+
+def subtracao(x, y):
+    sub = x - y
+    print(f'A subtração entre {x} e {y} é igual a {sub}')
+
+def divisao(x, y):
+    div = x / y
+    print(f'A divisão entre {x} e {y} é igual a {div}')
+
+def multiplicacao(x, y):
+    multi = x * y
+    print(f'A multiplicação entre {x} e {y} é igual a {multi}.')
+
+def exponenciacao(x, y):
+    expo = x ** y
+    print(f'A exponenciação entre {x} e {y} é igual a {expo}')
+    
+def raiz_quadrada(x, y):
+    r_q_8 = x ** 0.5
+    r_q_24 = y ** 0.5
+    print(f'A raiz quadrada de {x} é igual a {r_q_8}')
+    print(f'A raiz quadrada de {y} é igual a {r_q_24}')
+
+
+soma(8, 24)
+subtracao(8, 24)
+divisao(8, 24)
+multiplicacao(8, 24)
+exponenciacao(8, 24)
+raiz_quadrada(8, 24)
+
+def soma(* valores):
+    s = 0
+    for num in valores:
+        s += num
+    print(f'Somando os valores {valores} temos {s}')
+
+soma (5, 2)
+soma(2, 9, 4)
+
+valores = [7, 2, 5, 0, 4]
+
+def dobra(lista):
+    pos = 0 
+    while pos < len(lista):
+        lista[pos] *=2
+        pos += 1
+    
+dobra(valores)
+print(valores)
+
+help(print('Olá Mundo Loooko!!'))
+print('Chegueeei hein!!!')'''
+
+def contador(i, f, p):
+    """
+    -> Faz uma contagem e mostra na tela.
+    :param i: início da contagem
+    :param f: fim da contagem
+    :param p: passo da contagem
+    :return: sem retorno
+    : Função criada por César Oliveira baseado no curso do Professor Gustavo Guanabara.
+    """
+    c = 0
+    while c <= f:
+        print(f'{c} ', end='')
+        c += p
+    print("Fim do Programa!")
+
+help(contador)
 
