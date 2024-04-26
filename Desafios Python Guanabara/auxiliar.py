@@ -1171,7 +1171,7 @@ def contador(i, f, p):
         c += p
     print("Fim do Programa!")
 
-help(contador)'''
+help(contador)
 
 # Parâmetros Opcionais
 
@@ -1183,4 +1183,30 @@ def somar(a=4, b=2, c=12):
 somar(1, 5, 6)
 somar(8, 4)
 somar()
-somar(9, 10, 1)
+somar(9, 10, 1)'''
+
+
+# Escopo de Variáveis
+
+#Programa Principal
+
+def teste():
+    x = 8
+    print(f'Na função teste, n vale {n} ')
+    print(f'Na função teste, x vale {x}')
+
+n = 2
+print(f'No programa principal, n vale {n}')
+teste()
+
+
+
+def funcao():
+    global n1
+    n1 = 42
+    print(f'N1 dentro vale {n1}')
+
+
+n1 = 32 
+funcao(n1)
+print(f'N1 global vale {n1}')
