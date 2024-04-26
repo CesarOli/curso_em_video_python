@@ -285,8 +285,8 @@ media = 2.5
 nome = 'César Alexandre Oliveira'
 logado = True
 print(100)
-print('Carine, você sim é bem Goooostosa.')
-print(nome, 'te curte, aquele idiota!! Ahahahha.')
+print('Carine, você sim é bem simpática.')
+print(nome, 'te curte, aquele gente boa!! Ahahahha.')
 input(nome)
 a = 4
 b = 98
@@ -1154,7 +1154,7 @@ dobra(valores)
 print(valores)
 
 help(print('Olá Mundo Loooko!!'))
-print('Chegueeei hein!!!')'''
+print('Chegueeei hein!!!')
 
 def contador(i, f, p):
     """
@@ -1171,5 +1171,16 @@ def contador(i, f, p):
         c += p
     print("Fim do Programa!")
 
-help(contador)
+help(contador)'''
 
+# Parâmetros Opcionais
+
+def somar(a=4, b=2, c=12):
+    s = a + b + c
+    print(s)
+
+
+somar(1, 5, 6)
+somar(8, 4)
+somar()
+somar(9, 10, 1)
