@@ -1216,7 +1216,6 @@ def teste(b):
 a = 5
 teste(a)
 print(f'A fora vale {a}')
-'''
 
 # RETORNANDO VALORES
 
@@ -1231,4 +1230,29 @@ r3 = somar(3)
 
 print(f'A soma entre os números são {r1}, {r2}, {r3}.')
 
-print('Fim!!')
+print('Fim!!')'''
+
+def fatorial(num=1):
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c 
+    return f
+f1 = fatorial(5)
+f2 = fatorial(9)
+f3 = fatorial(3)
+
+print(f'Os resultados dos números passados são {f1}, {f2}, {f3}.')
+
+
+def par(num=0):
+    if num % 2 == 0:
+        return True
+    else: 
+        return False
+
+num = int(input(f'Digite um número para saber se é PAR ou ÍMPAR: '))
+if par(num):
+    print('É par!!')
+else:
+    print('É Ímpar!')
+
