@@ -13,3 +13,11 @@ cores = ('\033[m',        # 0 - sem cor
          '\033[30;45m'    # 5 - roxo
          '\033[7;30m'     # 6 - branco
          )
+
+def ajuda(comando):
+    titulo(f'Acessando o manual do comando \'{comando}\'', 4)
+    print(cores[6], end='')
+    help(comando
+    print(c[0], end=''))
+    sleep(1.5)
+
