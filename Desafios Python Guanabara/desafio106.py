@@ -21,3 +21,14 @@ def ajuda(comando):
     print(c[0], end=''))
     sleep(1.5)
 
+
+def titulo(mensagem, cor=0):
+    tamanho = len(mensagem) + 4
+    print(cores[cor], end='')
+    print('-' * tamanho)
+    print(f'    {mensagem}')
+    print('-' * tamanho)
+    print(cores[0], end='')
+    sleep(0.8)
+
+
