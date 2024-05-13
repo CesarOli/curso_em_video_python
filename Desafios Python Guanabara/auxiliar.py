@@ -1230,7 +1230,7 @@ r3 = somar(3)
 
 print(f'A soma entre os números são {r1}, {r2}, {r3}.')
 
-print('Fim!!')'''
+print('Fim!!
 
 def fatorial(num=1):
     f = 1
@@ -1255,4 +1255,13 @@ if par(num):
     print('É par!!')
 else:
     print('É Ímpar!')
+'''
 
+# Modularização
+# introdução conceitual
+# - Surgiu no início da década de 60.
+# - Sistemas ficando cada vez maiores
+# - Foco:
+#    é dividir  um programa grande em partes menores
+#    aumentar a legibilidade
+#    facilitar a manutenção
