@@ -1258,10 +1258,31 @@ else:
 '''
 
 # Modularização
-# introdução conceitual
+# INTRODUÇÃO CONCEITUAL
 # - Surgiu no início da década de 60.
 # - Sistemas ficando cada vez maiores
 # - Foco:
 #    é dividir  um programa grande em partes menores
 #    aumentar a legibilidade
-#    facilitar a manutenção
+#    facilitar a manutenção,
+
+
+# VANTAGENS DA MODULARIZAÇÃO
+# - Organização do Código
+# - Facilidade na manutenção
+# - Ocultação de código detalhado
+# - Reutilização em outros projetos
+
+
+def fatorial(n):
+    f = 1
+    for c in range(1, n + 1):
+        f *= c 
+    return f
+
+
+numero = int(input('Digite um valor para saber o seu fatorial: '))
+fat = fatorial(numero)
+print(f'O fatorial de {numero} é {fat}')
+
+print('Fim do Programa!')
