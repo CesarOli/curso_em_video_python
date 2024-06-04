@@ -4,6 +4,6 @@ Apresentar todos os exercícios resolvidos, proposto no curso em vídeo pelo Pro
 
 Este exercícios tem como objetivo fazer com que os alunos tenham a capacidade técnica básica em Pythom.
 
-Atualizado até o Desafio 115b.
+Atualizado até o Desafio 106.
 
 Atualização do arquivo README.MD
