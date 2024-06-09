@@ -16,10 +16,11 @@ Para clonar o repositório e começar a usar, siga os passos abaixo:
 
 ```bash
 git clone https://github.com/CesarOli/curso_em_video_python
-cd curso_em_video_python```
+cd curso_em_video_python
 
 
 ## Contato
 
-LinkedIn: https://www.linkedin.com/in/cesaroliveira-python/
-Email: cesaraleoliveira@gmail.com
+LinkedIn
+Email
+
