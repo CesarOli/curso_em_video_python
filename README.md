@@ -20,5 +20,6 @@ cd curso_em_video_python```
 
 
 ## Contato
-Linkedin: https://www.linkedin.com/in/cesaroliveira-python/
-email: cesaraleoliveira@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/cesaroliveira-python/
+Email: cesaraleoliveira@gmail.com
